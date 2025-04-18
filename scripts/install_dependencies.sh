@@ -3,7 +3,7 @@ sudo yum install tomcat -y
 sudo yum -y install httpd
 sudo cat << EOF > /etc/httpd/conf.d/tomcat_manager.conf
 <VirtualHost *:80>
-  ServerAdrmin root@localhost
+  ServerAdmin root@localhost
   ServerName app.nextwork.com
   DefaultType text/html
   ProxyRequests off
